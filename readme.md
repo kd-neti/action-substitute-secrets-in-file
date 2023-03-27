@@ -1,4 +1,4 @@
-# Substitute Secrets into Tokenised File
+# Substitute Secrets into Json File
 
 Substitute GitHub Secrets into a File, matching on a specified Token format.
 
@@ -33,7 +33,7 @@ PREFERENCES_CURRENCY = Bitcoin
 
 ```yaml
 - name: Substitute Secrets
-  uses: Lambdaspire/action-substitute-secrets-in-file@v1.0.0
+  uses: ks-neti/action-substitute-secrets-in-file@v1.0.0
   with:
 
     # The (single) file to target.
@@ -42,15 +42,6 @@ PREFERENCES_CURRENCY = Bitcoin
     # The (single) file output.
     # Optional - defaults to same as ":"file"
     output: config.json
-
-    # The token pattern.
-    # Must include the string "TOKEN".
-    # e.g.
-    #   ${TOKEN}
-    #   #{TOKEN}#
-    #   <TOKEN/>
-    #   <!-- TOKEN -->
-    tokenPattern: ${TOKEN}
 
     # Passes GitHub Secrets as a JSON string to the action.
     # This MUST be supplied.

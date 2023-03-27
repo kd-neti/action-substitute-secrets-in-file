@@ -1,6 +1,6 @@
-name: Substitute Secrets into Tokenised File
-description: Substitute GitHub Secrets into a File, matching on a specified Token format.
-author: Skylark @ Lambdaspire
+name: Substitute Secrets into Json File
+description: Substitute GitHub Secrets into a File, matching on a Key name.
+author: BankwinG
 inputs:
   file:
     required: true
@@ -8,9 +8,6 @@ inputs:
   output:
     required: false
     description: An optional alternative output file.
-  tokenPattern:
-    required: true
-    description: A pattern to match tokens. Must contain the word TOKEN. e.g. '#{TOKEN}#', '${TOKEN}', '<<<TOKEN>>>'...
   secretsJson:
     required: true
     description: JSON representation of the secrets.
