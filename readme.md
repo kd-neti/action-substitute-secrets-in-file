@@ -33,7 +33,7 @@ PREFERENCES_CURRENCY = Bitcoin
 
 ```yaml
 - name: Substitute Secrets
-  uses: ks-neti/action-substitute-secrets-in-file@v1.0.0
+  uses: kd-neti/action-substitute-secrets-in-file@v1.0.0
   with:
 
     # The (single) file to target.
